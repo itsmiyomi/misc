@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 20px;
             background: #333;
@@ -34,6 +34,7 @@
             padding: 10px;
             border: 1px solid #444;
             text-align: center;
+            word-break: break-word; /* Ensure text wraps properly */
         }
         th {
             background-color: #444;
@@ -58,9 +59,6 @@
             font-size: 0.8em;
             margin-top: 5px;
         }
-        .emoji {
-            font-size: 1.2em;
-        }
         .instructions {
             color: #ff4d4d;
             font-size: 1.2em;
@@ -79,13 +77,20 @@
             display: block;
             margin-top: 5px;
         }
-        /* Ensure consistent padding for both tables */
         .table-wrapper {
             padding: 10px;
             background: #333;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
+        }
+        @media (max-width: 600px) {
+            .tutorial {
+                font-size: 0.8em; /* Smaller font size for smaller screens */
+            }
+            .instructions {
+                font-size: 1.1em; /* Slightly smaller to fit better */
+            }
         }
     </style>
 </head>
