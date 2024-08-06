@@ -23,7 +23,7 @@ This document provides a list of manga and anime repositories that can be added 
 
 ## Download the Apps
 
-To download the Tachiyomi and Aniyomi apps, click the link below:
+To download the mihon and Aniyomi and more apps, click the link below:
 
 [![Download Icon](https://img.icons8.com/ios-filled/50/1e90ff/download.png)](https://bio.link/iitachiyomi) [Click Here](https://bio.link/iitachiyomi)
 
