@@ -34,7 +34,7 @@
             padding: 10px;
             border: 1px solid #444;
             text-align: center;
-            word-break: break-word; /* Ensure text wraps properly */
+            word-break: break-word;
         }
         th {
             background-color: #444;
@@ -85,23 +85,26 @@
             margin-bottom: 30px;
         }
         .icon {
-            font-size: 1.2em; /* Adjust size as needed */
+            font-size: 1.2em;
         }
         .download-icon {
-            font-size: 1.5em; /* Adjust size for better visibility */
+            font-size: 1.5em;
         }
         @media (max-width: 600px) {
             .tutorial {
-                font-size: 0.8em; /* Smaller font size for smaller screens */
+                font-size: 0.8em;
             }
             .instructions {
-                font-size: 1.1em; /* Slightly smaller to fit better */
+                font-size: 1.1em;
             }
             table {
-                font-size: 0.8em; /* Adjust font size in tables for smaller screens */
+                font-size: 0.8em;
             }
             .container {
-                padding: 10px; /* Reduce padding for smaller screens */
+                padding: 10px;
+            }
+            .table-wrapper {
+                padding: 5px;
             }
         }
     </style>
@@ -161,4 +164,37 @@
                         <td><a href="https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json">URL</a></td>
                     </tr>
                     <tr>
-                     
+                        <td>ni3x</td>
+                        <td><span class="emoji">🌍</span></td>
+                        <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json" class="download-icon">&#128190;</a></td>
+                        <td><a href="https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json">URL</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hollow</td>
+                        <td><span class="emoji">🌍</span></td>
+                        <td><a href="aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json" class="download-icon">&#128190;</a></td>
+                        <td><a href="https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json">URL</a></td>
+                    </tr>
+                    <tr>
+                        <td>Claudemirovsky</td>
+                        <td>
+                            <span class="emoji">🇧🇷</span> <span class="emoji">🇹🇷</span>
+                        </td>
+                        <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json" class="download-icon">&#128190;</a></td>
+                        <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json">URL</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="note">BR = Brazil, TR = Turkey</p>
+        <p class="small-note">Inspired by Wotaku, created by iiTachiyomi & Miyomi</p>
+
+        <div class="instructions">Adding Repo</div>
+        <div class="tutorial">
+            <span>Auto: Click on the download icon (📥) and the repo will be sideloaded automatically.</span>
+            <span>Manual: Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</span>
+        </div>
+    </div>
+</body>
+</html>
