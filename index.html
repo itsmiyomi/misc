@@ -61,10 +61,27 @@
         .emoji {
             font-size: 1.2em;
         }
+        .instructions {
+            color: #ff4d4d;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .tutorial {
+            font-size: 0.9em;
+            color: #ccc;
+            margin: 20px 0;
+        }
+        .tutorial span {
+            display: block;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="instructions">Adding Repo</div>
         <h1>Manga Repos</h1>
         <table>
             <thead>
@@ -129,16 +146,21 @@
                 <tr>
                     <td>Claudemirovsky</td>
                     <td>
-                        <span class="emoji">🇧🇷</span>
-                        <span class="emoji">🇹🇷</span>
+                        <span class="emoji">🇧🇷🇹🇷</span>
                     </td>
                     <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json">Install</a></td>
                     <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json">URL</a></td>
                 </tr>
             </tbody>
         </table>
+
         <p class="note">BR = Brazil, TR = Turkey</p>
         <p class="small-note">Inspired by Wotaku, created by iiTachiyomi & Miyomi</p>
+
+        <div class="tutorial">
+            <span>Auto: Click on Install and the repo will be sideloaded automatically.</span>
+            <span>Manual: Copy the URL (from the manual column) and put it in More (➡️) Settings (⚙️) Browse (📂) Extension repos.</span>
+        </div>
     </div>
 </body>
 </html>
