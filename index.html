@@ -1,49 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repo Listing</title>
+    <title>Manga and Anime Repos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #333;
+            background-color: #2b2b2b;
             color: #fff;
+            text-align: center;
             margin: 0;
-            padding: 0;
-        }
-        .container {
             padding: 20px;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-        .table-wrapper {
-            margin-bottom: 30px;
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 30px;
         }
         th, td {
             padding: 10px;
             border: 1px solid #444;
             text-align: center;
+            word-break: break-word;
         }
         th {
             background-color: #444;
+            color: #ddd;
         }
         td {
             background-color: #555;
         }
-        .note {
-            text-align: center;
-            margin-top: 10px;
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .note, .small-note {
             font-size: 0.9em;
             color: #ccc;
+            margin-top: 10px;
+        }
+        .small-note {
+            font-size: 0.8em;
+            margin-top: 5px;
         }
         .instructions {
+            color: #ff4d4d;
             font-size: 1.5em;
             font-weight: bold;
             margin: 30px 0 10px;
@@ -52,12 +69,23 @@
         .tutorial {
             font-size: 0.9em;
             color: #ccc;
+            margin: 10px auto;
             text-align: center;
-            margin: 0 auto;
-            max-width: 600px;
+            max-width: 500px;
+        }
+        .tutorial span {
+            display: block;
+            margin-top: 5px;
+        }
+        .table-wrapper {
+            padding: 10px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
         }
         .download-apps {
-            text-align: center;
+            color: #fff;
             margin: 20px 0;
             font-size: 1.2em;
         }
@@ -78,6 +106,12 @@
             table {
                 font-size: 0.8em;
             }
+            .container {
+                padding: 10px;
+            }
+            .table-wrapper {
+                padding: 5px;
+            }
         }
     </style>
 </head>
@@ -97,19 +131,19 @@
                 <tbody>
                     <tr>
                         <td>Keiyoushi</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json">URL</a></td>
                     </tr>
                     <tr>
                         <td>Kavita</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json">URL</a></td>
                     </tr>
                     <tr>
                         <td>Suwayomi</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json">URL</a></td>
                     </tr>
@@ -131,25 +165,27 @@
                 <tbody>
                     <tr>
                         <td>Almighty Hak</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/almightyhak/aniyomi-anime-repo/main/index.min.json">URL</a></td>
                     </tr>
                     <tr>
                         <td>ni3x</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/ni3x/aniyomi-extensions/repo/index.min.json">URL</a></td>
                     </tr>
                     <tr>
                         <td>Hollow</td>
-                        <td>🌍</td>
+                        <td><span class="emoji">🌍</span></td>
                         <td><a href="aniyomi://add-repo?url=https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json">Install</a></td>
                         <td><a href="https://codeberg.org/hollow/aniyomi-extensions-fr/media/branch/repo/index.min.json">URL</a></td>
                     </tr>
                     <tr>
                         <td>Claudemirovsky</td>
-                        <td>🇧🇷 🇹🇷</td>
+                        <td>
+                            <span class="emoji">🇧🇷</span> <span class="emoji">🇹🇷</span>
+                        </td>
                         <td><a href="aniyomi://add-repo?url=https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json">Install</a></td>
                         <td><a href="https://raw.githubusercontent.com/Claudemirovsky/cursedyomi-extensions/repo/index.min.json">URL</a></td>
                     </tr>
@@ -169,7 +205,7 @@
         </div>
         
         <p class="note">Created by iiTachiyomi & Miyomi</p>
-        <p class="note">Inspired by Wotaku</p>
+        <p class="small-note">Inspired by Wotaku</p>
     </div>
 </body>
 </html>
